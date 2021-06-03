@@ -1,0 +1,276 @@
+.reviews__wrapper {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-areas: "reviews__menu" "reviews__content__wrapper";
+    margin-top: 25px;
+}
+
+.reviews__menu {
+    grid-area: "reviews__menu";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reviews__menu__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: dotted 2px #bc9a6a;
+}
+
+.reviews__menu__links > a {
+    color: #f8f3dc !important;
+    text-align: center;
+    border-top: dotted 2px #bc9a6a;
+    margin-top: 10px;
+    padding-top: 10px;
+    white-space: nowrap;
+}
+
+.reviews__menu__links > a:hover {
+    text-decoration: underline;
+    background-color: transparent;
+}
+
+.reviews__content__wrapper {
+    grid-area: "reviews__content__wrapper";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reviews__rotator {
+    position: relative;
+    bottom: 8px;
+    right: 1px;
+    width: 100%;
+    height: auto;
+}
+
+.reviews__item {
+    display: grid;
+    grid-template-columns: 75% 40%;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+        "reviews__rotator__wrapper" "reviews__title"
+        "reviews__description";
+    padding-bottom: 10px;
+}
+
+.reviews__description > a {
+    color: white;
+    text-decoration: underline;
+}
+
+.reviews__footer {
+    padding-bottom: 300px;
+}
+
+.reviews__footer__title {
+    color: #bc9a6a;
+    font-size: 1.0rem;
+    border-bottom: dotted 2px #bc9a6a;
+    border-right: dotted 2px #bc9a6a;
+    width: 50%;
+}
+
+.reviews__footer__description > p {
+    color: #f8f3dc;
+    font-size: 0.95rem;
+}
+
+.borderTop {
+    border-top: dotted 2px #bc9a6a;
+}
+
+.testimonials__item > p {
+    color: #f8f3dc;
+    font-size: 0.85rem;
+}
+
+@media (min-width: 768px) {
+    .reviews__rotator__sm {
+        display: none;
+    }
+
+    .reviews__rotator__wrapper {
+        grid-area: "reviews__rotator__wrapper";
+        background-image: url("/img/Photo_Background_Martha.png") !important;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 39px;
+        margin: 0;
+        width: 91%;
+        position: relative;
+        bottom: 40px;
+        right: 48px;
+    }
+
+    .reviews__content {
+        background-image: url("/img/PaperBackground_Middle.png") !important;
+        background-repeat: repeat;
+        background-size: contain;
+        width: 87%;
+    }
+
+    .reviews__title {
+        position: relative;
+        right: 80px;
+        color: #bc9a6a;
+        border-bottom: dotted 2px #bc9a6a;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+
+    .reviews__description {
+        position: relative;
+        right: 80px;
+        margin-top: 5px;
+        text-align: left;
+        font-size: 0.85rem;
+        color: #f8f3dc !important;
+    }
+
+    .reviews__footer {
+        border-top: dotted 2px #bc9a6a;
+        padding-bottom: 300px;
+    }
+
+    .reviews__footer__logo {
+        position: relative;
+        right: 20px;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 991px) {
+    .reviews__wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+        grid-template-areas:
+            "reviews__menu"
+            "reviews__content__wrapper";
+        margin-top: 25px;
+    }
+
+    .reviews__menu {
+        display: none;
+    }
+
+    .dropdown {
+        display: flex;
+        justify-content: center;
+    }
+
+    .reviews__content__wrapper {
+        grid-area: "reviews__content__wrapper";
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reviews__dropdown__button {
+        color: #f8f3dc !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #22190f !important;
+        width: 300px;
+        height: 75px;
+        font-size: 20pt !important;
+    }
+
+    .reviews__dropdown__menu {
+        width: 300px;
+        background-color: #22190f !important;
+    }
+    .reviews__dropdown__menu > a {
+        color: #f8f3dc !important;
+    }
+    .reviews__dropdown__menu > a:hover {
+        color: black !important;
+        border-radius: 7px !important;
+    }
+
+    .reviews__dropdown__description {
+        font-size: 1.0rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .reviews__rotator__wrapper {
+        grid-area: "reviews__rotator__wrapper";
+        background-image: url("/img/Photo_Background_Martha.png") !important;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 35px;
+        margin: 0;
+        width: 91%;
+    }
+}
+
+@media (max-width: 767px) {
+    .reviews__item {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto repeat(1fr);
+        grid-template-areas:
+            "reviews__rotator__wrapper" "reviews__title"
+            "reviews__description";
+        padding-bottom: 10px;
+        justify-items: center;
+    }
+
+    .reviews__title {
+        color: #bc9a6a;
+        border-bottom: dotted 2px #bc9a6a;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+
+    .reviews__rotator__wrapper {
+        display: none;
+    }
+
+    .reviews__rotator__sm {
+        width: 50%;
+        height: auto;
+    }
+
+    .reviews__description {
+        margin-top: 5px;
+        text-align: left;
+        font-size: 0.85rem;
+        color: #f8f3dc !important;
+    }
+
+    .reviews__footer__title {
+        color: #bc9a6a;
+        font-size: 1.0rem;
+        border-bottom: dotted 2px #bc9a6a;
+        border-right: dotted 2px #bc9a6a;
+        border-top: dotted 2px #bc9a6a;
+        width: 70%;
+        text-align: center;
+    }
+
+    .reviews__footer {
+        align-items: center;
+        padding-bottom: 300px;
+    }
+
+    .reviews__footer__description {
+        position: relative;
+        right: 30px;
+        width: 65%;
+    }
+
+    .reviews__footer__logo {
+        width: 100%;
+        height: auto;
+    }
+}

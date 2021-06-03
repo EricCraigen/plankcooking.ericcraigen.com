@@ -1,0 +1,111 @@
+.cart__checkout__items__header {
+    display: flex;
+    height: 30px;
+    background-color: #d2be9d;
+  }
+  
+  .cart__checkout__notes {
+    grid-area: "cart__checkout__notes";
+  }
+  
+  .cart__checkout__notes__header {
+    display: flex;
+    height: 30px;
+    background-color: #d2be9d;
+  }
+
+  .cart__checkout__header {
+    grid-template-areas: "cart__checkout__header";
+    display: flex;
+    height: 100%; 
+  }
+  
+  .cart__checkout__subtotal {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 30px;
+    border: dashed 1px gray;
+    border-top: none;
+  }
+  
+  .cart__checkout__subtotal > span {
+    color: #4b290c;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+
+  .cart__checkout__footer {
+    grid-area: "cart__checkout__footer";
+    border: dashed 1px gray;
+    border-top: none;
+  }
+
+  .cart__checkout__form {
+    display: flex;
+    grid-template-areas: "cart__checkout__form";
+    padding: 0;
+    margin: 0;
+  }
+
+  .cart__checkout__header__billing {
+    color: #4b290c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: dashed 1px gray;
+    font-size: 0.9rem;
+    font-weight: bold;
+    width: 50%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    background-color: #d2be9d;
+  }
+
+  .cart__checkout__header__shipping {
+    color: #4b290c;
+    display: flex;
+    align-items: center;
+    border: dashed 1px gray;
+    border-left: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    width: 50%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    background-color: #d2be9d;
+  }
+
+  .cart__checkout__button {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .cart__checkout__button > img {
+    width: 100%;
+    height: auto;
+  }
+
+  .cart__checkout__items {
+    grid-area: "cart__checkout__items";
+  }
+
+  .cart__checkout__wrapper {
+    display: grid;
+    grid-area: "cart__checkout__wrapper";
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "cart__checkout__header"
+      "cart__checkout__form"
+      "cart__checkout__items"
+      "cart__checkout__notes"
+      "cart__checkout__footer";
+    margin-top: 15px;
+    padding: 5px;
+    background-color: #e8e3c8;
+    height: 100%;
+  }

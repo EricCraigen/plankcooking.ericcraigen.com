@@ -1,0 +1,724 @@
+.cart__header__preview {
+  grid-area: "cart__header";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #bc9a72;
+  border: solid 1px black;
+  height: 50px;
+}
+
+.cart__cardDate__wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.cart__preview__notes__header {
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  background-color: #d2be9d;
+}
+
+.cart__preview__subtotal {
+  display: flex;
+  align-items: center;
+  height: 30px;
+}
+
+.cart__preview__items__footer {
+  border: dashed 1px gray;
+  border-top: none;
+}
+
+.cart__preview__subtotal > span {
+  color: #4b290c;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.cart__preview__items__header__name {
+  color: #4b290c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: dashed 1px gray;
+  font-size: 0.9rem;
+  font-weight: bold;
+  width: 61%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  background-color: #d2be9d;
+}
+
+.cart__preview__header__name {
+  color: #4b290c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: dashed 1px gray;
+  font-size: 0.9rem;
+  font-weight: bold;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  background-color: #d2be9d;
+}
+
+.cart__preview__input__wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.cart__shippingType__error__wrapper {
+  position: relative; 
+  bottom: 50px;
+  left: 465px;
+  display: flex;
+  width: 300px;
+}
+
+.cart__cardType__error__wrapper {
+  position: relative;
+  bottom: 50px;
+  right: 250px;
+  display: flex;
+  width: 300px;
+}
+
+.cart__preview__input__wrapper, .cart__preview__payment__inputs > span, select, input {
+  color: #4b290c;
+}
+
+.cart__preview__notes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #4b290c;
+  border: dashed 1px gray;
+  border-top: none;
+}
+
+.cart__preview__shippingNote {
+  color: #4b290c;
+  font-style: italic;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5px;
+}
+
+.cart__preview__items__name {
+  color: #4b290c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: dashed 1px gray;
+  border-top: none;
+  font-size: 0.9rem;
+  width: 61%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+
+.cart__preview__label {
+  color: #4b290c;
+  font-size: 0.9rem;
+  width: 80px;
+  text-align: right;
+  margin-right: 5px;
+}
+
+.cart__preview__output {
+  font-size: 0.9rem;
+  color: #4b290c;
+}
+
+.cart__preview__billing {
+  display: flex;
+  padding: 8px;
+}
+
+.cart__preview__shipping {
+  display: flex;
+  padding: 8px;
+}
+
+.cart__preview__labels {
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.cart__preview__outputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cart__preview__outputs__shipping {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.cart__preview__footer__buttons {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: dashed 1px gray;
+  border-top: none;
+}
+
+.cart__preview__input__label {
+  display: inline-block;
+  width: 110px !important;
+}
+
+.cart__input__error__preview > i {
+    font-size: 1.5rem;
+    color: orange;
+    margin-right: 5px;
+}
+
+.cart__input__error__cardType > i {
+    font-size: 1.5rem;
+    color: orange;
+    margin-right: 5px;
+}
+
+.cart__preview__subtotal__label {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 87%;
+}
+
+.cart__preview__subtotal__output {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 13%;
+}
+
+.cart__preview__payment__inputs {
+    display: flex;
+}
+
+.cart__input__error__before__cardNumber {
+    z-index: 3;
+    position: relative;
+    top: 21px;
+    right: 70px;
+    content: "";
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border: 1px black solid;
+    border-left: none;
+    border-top: none;
+    transform: rotate(45deg);
+}
+
+@media (max-width: 767px) {
+  .cart__preview__header__billing {
+    color: #4b290c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: dashed 1px gray;
+    border-left: none;
+    border-right: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    background-color: #d2be9d;
+  }
+
+  .cart__preview__header__shipping {
+    color: #4b290c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: dashed 1px gray;
+    border-left: none;
+    border-right: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    background-color: #d2be9d;
+  }
+
+  .cart__input__error_cardType__wrapper {
+    position: relative;
+    bottom: 52px;
+    right: 650px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cart__input__error__cardNumber {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 40px;
+    left: 390px;
+    background-color: white;
+    padding-top: 4px;
+    padding-bottom:4px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border: 1px black solid;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    width: 275px;
+  }
+
+  .cart__input__error__month {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 75px;
+    left: 307px;
+    background-color: white;
+    padding-top: 4px;
+    padding-bottom:4px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border: 1px black solid;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    width: 200px;
+  }
+
+  .cart__input__error__year {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 75px;
+    left: 552px;
+    background-color: white;
+    padding-top: 4px;
+    padding-bottom:4px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border: 1px black solid;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    width: 200px;
+  }
+
+  .cart__card__YYMM__select {
+      margin-right: 5px;
+      width: 125px;
+  }
+
+  .cart__input__error__cardType {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -15px;
+    left: 395px;
+    background-color: white;
+    padding-top: 4px;
+    padding-bottom:4px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border: 1px black solid;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    width: 265px;
+  }
+
+  .cart__input__error__before__cardYear {
+    z-index: 3;
+    position: relative;
+    top: 21px;
+    right: 160px;
+    content: "";
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border: 1px black solid;
+    border-left: none;
+    border-top: none;
+    transform: rotate(45deg);
+  }
+
+  .cart__input__error__before__cardMonth {
+    z-index: 3;
+    position: relative;
+    top: 21px;
+    right: 35px;
+    content: "";
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border: 1px black solid;
+    border-left: none;
+    border-top: none;
+    transform: rotate(45deg);
+  }
+
+  .cart__input__error__before__cardType {
+    z-index: 3;
+    position: relative;
+    top: 13px;
+    right: 89px;
+    content: "";
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border: 1px black solid;
+    border-left: none;
+    border-top: none;
+    transform: rotate(45deg);
+  }
+
+  .cart__input__error__preview {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 5px;
+    right: 85px;
+    background-color: white;
+    padding-top: 4px;
+    padding-bottom:4px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border: 1px black solid;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    width: 200px;
+  }
+
+  .cart__input__error__before__preview {
+    z-index: 3;
+    position: relative;
+    top: 13px;
+    right: 100px;
+    content: "";
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border: 1px black solid;
+    border-left: none;
+    border-top: none;
+    transform: rotate(45deg);
+  }
+
+  .cart__input__error__before__cardNumber {
+    z-index: 3;
+    position: relative;
+    top: 13px;
+    right: 110px;
+    content: "";
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border: 1px black solid;
+    border-left: none;
+    border-top: none;
+    transform: rotate(45deg);
+  }
+
+  .cart__preview__creditCardType__label {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .cart__cardDate__wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 20px !important;
+  }
+
+}
+
+
+@media (min-width: 768px) {
+  .cart__preview__header__billing {
+    color: #4b290c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: dashed 1px gray;
+    border-left: none;
+    border-right: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    background-color: #d2be9d;
+  }
+
+  .cart__preview__header__shipping {
+    color: #4b290c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: dashed 1px gray;
+    border-left: none;
+    border-right: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    background-color: #d2be9d;
+  }
+
+  .cart__input__error_cardType__wrapper {
+    position: relative;
+    bottom: 52px;
+    right: 600px;
+    width: 500px;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .cart__input__error__cardNumber {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 21px;
+    background-color: white;
+    padding-top: 4px;
+    padding-bottom:4px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border: 1px black solid;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    width: 225px;
+  }
+
+  .cart__input__error__month {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 25px;
+    left: 270px;
+    background-color: white;
+    padding-top: 4px;
+    padding-bottom:4px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border: 1px black solid;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    width: 180px;
+  }
+
+  .cart__input__error__year {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 25px;
+    left: 455px;
+    background-color: white;
+    padding-top: 4px;
+    padding-bottom:4px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border: 1px black solid;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    width: 180px;
+  }
+
+  .cart__card__YYMM__select {
+      margin-right: 5px;
+      width: 100px;
+  }
+
+  .cart__input__error__cardType {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -15px;
+    left: 35px;
+    background-color: white;
+    padding-top: 4px;
+    padding-bottom:4px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border: 1px black solid;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    width: 220px;
+  }
+
+  .cart__input__error__before__cardYear {
+    z-index: 3;
+    position: relative;
+    top: 21px;
+    right: 40px;
+    content: "";
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border: 1px black solid;
+    border-left: none;
+    border-top: none;
+    transform: rotate(45deg);
+  }
+
+  .cart__input__error__before__cardMonth {
+    z-index: 3;
+    position: relative;
+    top: 21px;
+    right: 25px;
+    content: "";
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border: 1px black solid;
+    border-left: none;
+    border-top: none;
+    transform: rotate(45deg);
+  }
+
+  .cart__input__error__before__cardType {
+    z-index: 3;
+    position: relative;
+    top: 13px;
+    right: 120px;
+    content: "";
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border: 1px black solid;
+    border-left: none;
+    border-top: none;
+    transform: rotate(45deg);
+  }
+
+  .cart__input__error__preview {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: 40px;
+    top: 14px;
+    background-color: white;
+    padding-top: 4px;
+    padding-bottom:4px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border: 1px black solid;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    width: 200px;
+  } 
+
+  .cart__input__error__before__preview {
+    z-index: 3;
+    position: relative;
+    top: 13px;
+    right: 100px;
+    content: "";
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border: 1px black solid;
+    border-left: none;
+    border-top: none;
+    transform: rotate(45deg);
+  }
+
+  .cart__input__error__before__cardNumber {
+    z-index: 3;
+    position: relative;
+    top: 21px;
+    right: 70px;
+    content: "";
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border: 1px black solid;
+    border-left: none;
+    border-top: none;
+    transform: rotate(45deg);
+  }
+
+  .cart__preview__creditCardType__label {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .cart__cardDate__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .cart__input__error__preview {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 180px;
+    top: 14px;
+    background-color: white;
+    padding-top: 4px;
+    padding-bottom:4px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border: 1px black solid;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    width: 200px;
+  } 
+}
